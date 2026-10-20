@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EduSpace adalah ruang belajar digital untuk menemukan materi, tips, dan referensi pendidikan.">
+  <title>EduSpace | Ruang Belajar Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="#home" aria-label="EduSpace beranda">
+        <span class="brand-icon">E</span>
+        <span>Edu<span class="brand-accent">Space</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Beranda</a>
+        <a href="#materi">Materi</a>
+        <a href="#tips">Tips Belajar</a>
+        <a href="#referensi">Referensi</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Aktifkan mode gelap" title="Ganti tema">☾</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> RUANG BELAJAR DIGITAL</span>
+          <h1>Belajar Lebih Mudah,<br><span>Raih Potensi Terbaikmu.</span></h1>
+          <p class="hero-description">
+            Temukan materi pembelajaran, tips belajar efektif, dan referensi digital
+            untuk menemani perjalanan akademikmu.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#materi">Jelajahi Materi <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#tentang">Tentang EduSpace</a>
+          </div>
+          <div class="hero-note">
+            <span class="note-icon">✓</span>
+            Belajar mandiri, kapan saja dan di mana saja.
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Ilustrasi kegiatan belajar">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+          <div class="floating-card card-top">
+            <span class="floating-icon purple">✦</span>
+            <div><strong>Terus berkembang</strong><small>Belajar setiap hari</small></div>
+          </div>
+          <div class="study-illustration">
+            <div class="sun-shape"></div>
+            <div class="book book-back"></div>
+            <div class="book book-front">
+              <div class="book-line"></div><div class="book-line short"></div><div class="book-line"></div>
+              <div class="book-symbol">E</div>
+            </div>
+            <div class="pencil"></div>
+            <div class="plant"><span></span><span></span><i></i></div>
+            <div class="desk"></div>
+          </div>
+          <div class="floating-card card-bottom">
+            <span class="floating-icon blue">✎</span>
+            <div><strong>Mulai dari hal kecil</strong><small>Satu materi setiap hari</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section materials-section" id="materi">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">PILIH TOPIKMU</span>
+            <h2>Materi Pembelajaran</h2>
+            <p>Jelajahi topik dasar yang dapat membantu menambah pengetahuanmu.</p>
+          </div>
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input type="search" id="searchInput" placeholder="Cari materi..." aria-label="Cari materi pembelajaran">
+          </label>
+        </div>
+
+        <div class="filter-row" aria-label="Filter kategori materi">
+          <button class="filter-button active" data-filter="semua" type="button">Semua</button>
+          <button class="filter-button" data-filter="teknologi" type="button">Teknologi</button>
+          <button class="filter-button" data-filter="pemrograman" type="button">Pemrograman</button>
+          <button class="filter-button" data-filter="literasi" type="button">Literasi Digital</button>
+        </div>
+
+        <div class="materials-grid" id="materialsGrid">
+          <article class="material-card" data-category="teknologi" data-title="dasar teknologi informasi">
+            <div class="material-art art-blue"><span class="art-icon">⌘</span><span class="art-label">01 / TEKNOLOGI</span></div>
+            <div class="material-body">
+              <span class="tag tag-blue">Teknologi</span>
+              <h3>Dasar Teknologi Informasi</h3>
+              <p>Kenali perangkat keras, perangkat lunak, dan peran teknologi dalam kehidupan sehari-hari.</p>
+              <div class="extra-content" hidden>Teknologi informasi membantu proses pengumpulan, pengolahan, penyimpanan, dan penyebaran informasi. Contohnya adalah komputer, aplikasi, dan jaringan internet.</div>
+              <button class="text-button details-button" type="button" aria-expanded="false">Baca selengkapnya <span>→</span></button>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="pemrograman" data-title="pengenalan pemrograman web">
+            <div class="material-art art-purple"><span class="art-icon">&lt;/&gt;</span><span class="art-label">02 / CODING</span></div>
+            <div class="material-body">
+              <span class="tag tag-purple">Pemrograman</span>
+              <h3>Pengenalan Pemrograman Web</h3>
+              <p>Pelajari fungsi HTML untuk struktur, CSS untuk tampilan, dan JavaScript untuk interaksi.</p>
+              <div class="extra-content" hidden>HTML menyusun konten halaman. CSS mengatur warna, ukuran, dan tata letak. JavaScript membuat halaman lebih interaktif, misalnya melalui tombol dan pencarian.</div>
+              <button class="text-button details-button" type="button" aria-expanded="false">Baca selengkapnya <span>→</span></button>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="literasi" data-title="literasi digital aman">
+            <div class="material-art art-green"><span class="art-icon">◎</span><span class="art-label">03 / DIGITAL</span></div>
+            <div class="material-body">
+              <span class="tag tag-green">Literasi Digital</span>
+              <h3>Literasi Digital yang Aman</h3>
+              <p>Pahami cara memeriksa informasi, menjaga data pribadi, dan berperilaku bijak di internet.</p>
+              <div class="extra-content" hidden>Biasakan memeriksa sumber informasi, menggunakan kata sandi yang kuat, mengaktifkan autentikasi dua faktor, dan tidak membagikan data sensitif sembarangan.</div>
+              <button class="text-button details-button" type="button" aria-expanded="false">Baca selengkapnya <span>→</span></button>
+            </div>
+          </article>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>Materi tidak ditemukan. Coba kata kunci lain.</p>
+      </div>
+    </section>
+
+    <section class="section tips-section" id="tips">
+      <div class="container tips-layout">
+        <div class="tips-intro">
+          <span class="eyebrow">KEBIASAAN BAIK</span>
+          <h2>Belajar Cerdas,<br><span>Bukan Sekadar Lama.</span></h2>
+          <p>Kebiasaan sederhana dapat membuat proses belajar lebih terarah dan nyaman.</p>
+          <a class="text-button" href="#jadwal">Lihat contoh jadwal <span>→</span></a>
+        </div>
+        <div class="tips-list">
+          <article class="tip-item"><span class="tip-number">01</span><div><h3>Tentukan target kecil</h3><p>Pilih satu atau dua hal yang ingin dipahami setiap sesi belajar.</p></div></article>
+          <article class="tip-item"><span class="tip-number">02</span><div><h3>Jauhkan distraksi</h3><p>Kurangi notifikasi dan siapkan tempat belajar yang nyaman.</p></div></article>
+          <article class="tip-item"><span class="tip-number">03</span><div><h3>Ulangi dan praktikkan</h3><p>Coba jelaskan kembali materi atau terapkan melalui latihan sederhana.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section schedule-section" id="jadwal">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">MULAI TERATUR</span>
+            <h2>Contoh Jadwal Belajar</h2>
+            <p>Gunakan jadwal sederhana sebagai inspirasi mengatur waktu belajar.</p>
+          </div>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>Hari</th><th>Waktu</th><th>Kegiatan</th><th>Durasi</th></tr></thead>
+            <tbody>
+              <tr><td>Senin</td><td>19.00</td><td>Membaca materi kuliah</td><td>30 menit</td></tr>
+              <tr><td>Selasa</td><td>19.00</td><td>Latihan pemrograman</td><td>45 menit</td></tr>
+              <tr><td>Rabu</td><td>19.30</td><td>Membuat rangkuman</td><td>30 menit</td></tr>
+              <tr><td>Kamis</td><td>19.00</td><td>Mengulang materi</td><td>30 menit</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">*Jadwal di atas hanya contoh dan dapat disesuaikan dengan kebutuhan masing-masing.</p>
+      </div>
+    </section>
+
+    <section class="section resources-section" id="referensi">
+      <div class="container resources-panel">
+        <div>
+          <span class="eyebrow">BELAJAR LEBIH JAUH</span>
+          <h2>Referensi Belajar Gratis</h2>
+          <p>Manfaatkan sumber belajar berikut untuk memperdalam pengetahuan, terutama di bidang teknologi dan pemrograman web.</p>
+        </div>
+        <div class="resource-links">
+          <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer"><span class="resource-icon">W</span><span><strong>W3Schools</strong><small>Tutorial dasar pengembangan web</small></span><span class="external-arrow">↗</span></a>
+          <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer"><span class="resource-icon resource-purple">M</span><span><strong>MDN Web Docs</strong><small>Dokumentasi web untuk belajar lebih lanjut</small></span><span class="external-arrow">↗</span></a>
+          <a href="https://www.khanacademy.org/" target="_blank" rel="noopener noreferrer"><span class="resource-icon resource-green">K</span><span><strong>Khan Academy</strong><small>Materi belajar dari berbagai bidang</small></span><span class="external-arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="tentang">
+      <div class="container about-card">
+        <div class="about-mark">E.</div>
+        <div class="about-copy">
+          <span class="eyebrow">TENTANG EDUSPACE</span>
+          <h2>Teman belajar dalam perjalananmu.</h2>
+          <p>EduSpace merupakan website sederhana bertema pendidikan yang dibuat untuk membantu pengunjung menemukan materi dasar, tips belajar, dan referensi digital dalam satu tempat.</p>
+        </div>
+        <div class="student-info">
+          <span>WEBSITE OLEH</span>
+          <strong>[Nama Mahasiswa]</strong>
+          <p>NIM: [Nomor Induk Mahasiswa]</p>
+          <small>S1 Sistem Informasi</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="brand footer-brand" href="#home"><span class="brand-icon">E</span><span>Edu<span class="brand-accent">Space</span></span></a>
+      <p>Belajar hari ini, berkembang setiap hari.</p>
+      <span>© <span id="currentYear"></span> EduSpace</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
