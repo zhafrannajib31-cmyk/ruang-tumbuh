@@ -3,215 +3,443 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="EduSpace adalah ruang belajar digital untuk menemukan materi, tips, dan referensi pendidikan.">
-  <title>EduSpace | Ruang Belajar Digital</title>
+  <meta name="description" content="RuangTumbuh — ruang edukasi dan motivasi untuk siswa dan mahasiswa: strategi belajar, kebiasaan kecil, ruang fokus, dan refleksi harian.">
+  <meta name="theme-color" content="#176b70">
+  <title>RuangTumbuh | Belajar dengan Arah, Tumbuh dengan Tenang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar container" aria-label="Navigasi utama">
-      <a class="brand" href="#home" aria-label="EduSpace beranda">
-        <span class="brand-icon">E</span>
-        <span>Edu<span class="brand-accent">Space</span></span>
+      <a class="brand" href="#home" aria-label="RuangTumbuh beranda">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 21v-8"></path>
+            <path d="M12 13c0-3 2-5 5-5 0 3-2 5-5 5z"></path>
+            <path d="M12 13c0-3-2-5-5-5 0 3 2 5 5 5z"></path>
+          </svg>
+        </span>
+        <span>Ruang<span class="brand-accent">Tumbuh</span></span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
 
       <div class="nav-links" id="navLinks">
         <a href="#home">Beranda</a>
-        <a href="#materi">Materi</a>
-        <a href="#tips">Tips Belajar</a>
-        <a href="#referensi">Referensi</a>
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Aktifkan mode gelap" title="Ganti tema">☾</button>
+        <a href="#tentang">Tentang</a>
+        <a href="#strategi">Strategi</a>
+        <a href="#refleksi">Refleksi</a>
+        <a href="#langkah" class="nav-cta">Langkah Kecil</a>
       </div>
     </nav>
   </header>
 
   <main>
+    <!-- 5.1 Home / Hero -->
     <section class="hero section" id="home">
       <div class="container hero-grid">
         <div class="hero-content">
-          <span class="eyebrow"><span class="eyebrow-dot"></span> RUANG BELAJAR DIGITAL</span>
-          <h1>Belajar Lebih Mudah,<br><span>Raih Potensi Terbaikmu.</span></h1>
+          <span class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> RUANG BELAJAR UNTUK SISWA &amp; MAHASISWA</span>
+          <h1>Belajar lebih tenang, <span>tumbuh dengan caramu sendiri.</span></h1>
           <p class="hero-description">
-            Temukan materi pembelajaran, tips belajar efektif, dan referensi digital
-            untuk menemani perjalanan akademikmu.
+            RuangTumbuh membantumu menemukan cara belajar yang cocok, membangun kebiasaan kecil,
+            dan menjaga energi — tanpa harus ikut tekanan untuk selalu produktif.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#materi">Jelajahi Materi <span aria-hidden="true">→</span></a>
-            <a class="button button-secondary" href="#tentang">Tentang EduSpace</a>
+            <a class="button button-primary" href="#strategi">Jelajahi Strategi Belajar <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#fokus">Coba Fokus 25 Menit</a>
           </div>
-          <div class="hero-note">
-            <span class="note-icon">✓</span>
-            Belajar mandiri, kapan saja dan di mana saja.
-          </div>
+          <ul class="hero-highlights">
+            <li><span class="check" aria-hidden="true">✓</span> Belajar sesuai ritme, bukan sekadar mengejar nilai</li>
+            <li><span class="check" aria-hidden="true">✓</span> Satu langkah kecil hari ini lebih berarti daripada rencana besar yang ditunda</li>
+          </ul>
         </div>
 
-        <div class="hero-visual" aria-label="Ilustrasi kegiatan belajar">
-          <div class="visual-orbit orbit-one"></div>
-          <div class="visual-orbit orbit-two"></div>
-          <div class="floating-card card-top">
-            <span class="floating-icon purple">✦</span>
-            <div><strong>Terus berkembang</strong><small>Belajar setiap hari</small></div>
+        <div class="hero-visual">
+          <div class="hero-photo-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=760&q=80"
+              alt="Tanaman hijau dengan daun lebat, simbol tumbuhnya diri"
+              class="hero-photo"
+              fetchpriority="high"
+              decoding="async"
+            >
           </div>
-          <div class="study-illustration">
-            <div class="sun-shape"></div>
-            <div class="book book-back"></div>
-            <div class="book book-front">
-              <div class="book-line"></div><div class="book-line short"></div><div class="book-line"></div>
-              <div class="book-symbol">E</div>
-            </div>
-            <div class="pencil"></div>
-            <div class="plant"><span></span><span></span><i></i></div>
-            <div class="desk"></div>
+          <div class="floating-card card-top" aria-hidden="true">
+            <span class="floating-icon purple">🎯</span>
+            <div><strong>Belajar Terarah</strong><small>Satu tugas, satu waktu</small></div>
           </div>
-          <div class="floating-card card-bottom">
-            <span class="floating-icon blue">✎</span>
-            <div><strong>Mulai dari hal kecil</strong><small>Satu materi setiap hari</small></div>
+          <div class="floating-card card-bottom" aria-hidden="true">
+            <span class="floating-icon teal">⏱️</span>
+            <div><strong>Fokus 25 Menit</strong><small>Lalu istirahat 5 menit</small></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section materials-section" id="materi">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <span class="eyebrow">PILIH TOPIKMU</span>
-            <h2>Materi Pembelajaran</h2>
-            <p>Jelajahi topik dasar yang dapat membantu menambah pengetahuanmu.</p>
-          </div>
-          <label class="search-box">
-            <span aria-hidden="true">⌕</span>
-            <input type="search" id="searchInput" placeholder="Cari materi..." aria-label="Cari materi pembelajaran">
-          </label>
-        </div>
-
-        <div class="filter-row" aria-label="Filter kategori materi">
-          <button class="filter-button active" data-filter="semua" type="button">Semua</button>
-          <button class="filter-button" data-filter="teknologi" type="button">Teknologi</button>
-          <button class="filter-button" data-filter="pemrograman" type="button">Pemrograman</button>
-          <button class="filter-button" data-filter="literasi" type="button">Literasi Digital</button>
-        </div>
-
-        <div class="materials-grid" id="materialsGrid">
-          <article class="material-card" data-category="teknologi" data-title="dasar teknologi informasi">
-            <div class="material-art art-blue"><span class="art-icon">⌘</span><span class="art-label">01 / TEKNOLOGI</span></div>
-            <div class="material-body">
-              <span class="tag tag-blue">Teknologi</span>
-              <h3>Dasar Teknologi Informasi</h3>
-              <p>Kenali perangkat keras, perangkat lunak, dan peran teknologi dalam kehidupan sehari-hari.</p>
-              <div class="extra-content" hidden>Teknologi informasi membantu proses pengumpulan, pengolahan, penyimpanan, dan penyebaran informasi. Contohnya adalah komputer, aplikasi, dan jaringan internet.</div>
-              <button class="text-button details-button" type="button" aria-expanded="false">Baca selengkapnya <span>→</span></button>
-            </div>
-          </article>
-
-          <article class="material-card" data-category="pemrograman" data-title="pengenalan pemrograman web">
-            <div class="material-art art-purple"><span class="art-icon">&lt;/&gt;</span><span class="art-label">02 / CODING</span></div>
-            <div class="material-body">
-              <span class="tag tag-purple">Pemrograman</span>
-              <h3>Pengenalan Pemrograman Web</h3>
-              <p>Pelajari fungsi HTML untuk struktur, CSS untuk tampilan, dan JavaScript untuk interaksi.</p>
-              <div class="extra-content" hidden>HTML menyusun konten halaman. CSS mengatur warna, ukuran, dan tata letak. JavaScript membuat halaman lebih interaktif, misalnya melalui tombol dan pencarian.</div>
-              <button class="text-button details-button" type="button" aria-expanded="false">Baca selengkapnya <span>→</span></button>
-            </div>
-          </article>
-
-          <article class="material-card" data-category="literasi" data-title="literasi digital aman">
-            <div class="material-art art-green"><span class="art-icon">◎</span><span class="art-label">03 / DIGITAL</span></div>
-            <div class="material-body">
-              <span class="tag tag-green">Literasi Digital</span>
-              <h3>Literasi Digital yang Aman</h3>
-              <p>Pahami cara memeriksa informasi, menjaga data pribadi, dan berperilaku bijak di internet.</p>
-              <div class="extra-content" hidden>Biasakan memeriksa sumber informasi, menggunakan kata sandi yang kuat, mengaktifkan autentikasi dua faktor, dan tidak membagikan data sensitif sembarangan.</div>
-              <button class="text-button details-button" type="button" aria-expanded="false">Baca selengkapnya <span>→</span></button>
-            </div>
-          </article>
-        </div>
-        <p class="empty-state" id="emptyState" hidden>Materi tidak ditemukan. Coba kata kunci lain.</p>
-      </div>
-    </section>
-
-    <section class="section tips-section" id="tips">
-      <div class="container tips-layout">
-        <div class="tips-intro">
-          <span class="eyebrow">KEBIASAAN BAIK</span>
-          <h2>Belajar Cerdas,<br><span>Bukan Sekadar Lama.</span></h2>
-          <p>Kebiasaan sederhana dapat membuat proses belajar lebih terarah dan nyaman.</p>
-          <a class="text-button" href="#jadwal">Lihat contoh jadwal <span>→</span></a>
-        </div>
-        <div class="tips-list">
-          <article class="tip-item"><span class="tip-number">01</span><div><h3>Tentukan target kecil</h3><p>Pilih satu atau dua hal yang ingin dipahami setiap sesi belajar.</p></div></article>
-          <article class="tip-item"><span class="tip-number">02</span><div><h3>Jauhkan distraksi</h3><p>Kurangi notifikasi dan siapkan tempat belajar yang nyaman.</p></div></article>
-          <article class="tip-item"><span class="tip-number">03</span><div><h3>Ulangi dan praktikkan</h3><p>Coba jelaskan kembali materi atau terapkan melalui latihan sederhana.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section schedule-section" id="jadwal">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <span class="eyebrow">MULAI TERATUR</span>
-            <h2>Contoh Jadwal Belajar</h2>
-            <p>Gunakan jadwal sederhana sebagai inspirasi mengatur waktu belajar.</p>
-          </div>
-        </div>
-        <div class="table-wrapper">
-          <table>
-            <thead><tr><th>Hari</th><th>Waktu</th><th>Kegiatan</th><th>Durasi</th></tr></thead>
-            <tbody>
-              <tr><td>Senin</td><td>19.00</td><td>Membaca materi kuliah</td><td>30 menit</td></tr>
-              <tr><td>Selasa</td><td>19.00</td><td>Latihan pemrograman</td><td>45 menit</td></tr>
-              <tr><td>Rabu</td><td>19.30</td><td>Membuat rangkuman</td><td>30 menit</td></tr>
-              <tr><td>Kamis</td><td>19.00</td><td>Mengulang materi</td><td>30 menit</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="table-note">*Jadwal di atas hanya contoh dan dapat disesuaikan dengan kebutuhan masing-masing.</p>
-      </div>
-    </section>
-
-    <section class="section resources-section" id="referensi">
-      <div class="container resources-panel">
-        <div>
-          <span class="eyebrow">BELAJAR LEBIH JAUH</span>
-          <h2>Referensi Belajar Gratis</h2>
-          <p>Manfaatkan sumber belajar berikut untuk memperdalam pengetahuan, terutama di bidang teknologi dan pemrograman web.</p>
-        </div>
-        <div class="resource-links">
-          <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer"><span class="resource-icon">W</span><span><strong>W3Schools</strong><small>Tutorial dasar pengembangan web</small></span><span class="external-arrow">↗</span></a>
-          <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer"><span class="resource-icon resource-purple">M</span><span><strong>MDN Web Docs</strong><small>Dokumentasi web untuk belajar lebih lanjut</small></span><span class="external-arrow">↗</span></a>
-          <a href="https://www.khanacademy.org/" target="_blank" rel="noopener noreferrer"><span class="resource-icon resource-green">K</span><span><strong>Khan Academy</strong><small>Materi belajar dari berbagai bidang</small></span><span class="external-arrow">↗</span></a>
-        </div>
-      </div>
-    </section>
-
+    <!-- 5.2 Tentang RuangTumbuh -->
     <section class="section about-section" id="tentang">
-      <div class="container about-card">
-        <div class="about-mark">E.</div>
-        <div class="about-copy">
-          <span class="eyebrow">TENTANG EDUSPACE</span>
-          <h2>Teman belajar dalam perjalananmu.</h2>
-          <p>EduSpace merupakan website sederhana bertema pendidikan yang dibuat untuk membantu pengunjung menemukan materi dasar, tips belajar, dan referensi digital dalam satu tempat.</p>
+      <div class="container about-grid">
+        <div class="about-intro">
+          <span class="eyebrow">TENTANG RUANGTUMBUH</span>
+          <h2>Belajar bukan <span>perlombaan kecepatan.</span></h2>
         </div>
-        <div class="student-info">
-          <span>WEBSITE OLEH</span>
-          <strong>[Nama Mahasiswa]</strong>
-          <p>NIM: [Nomor Induk Mahasiswa]</p>
-          <small>S1 Sistem Informasi</small>
+        <div class="about-photo-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=760&q=80"
+            alt="Tumpukan buku, simbol kegiatan belajar"
+            class="about-photo"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+        <div class="about-copy">
+          <p>
+            RuangTumbuh adalah ruang edukasi dan motivasi untuk siswa dan mahasiswa
+            yang ingin belajar lebih terarah tanpa kehilangan keseimbangan.
+          </p>
+          <p>
+            Di tengah tumpukan tugas, ujian, dan perbandingan di media sosial, wajar jika
+            kamu merasa tertinggal. Di sini kamu bisa menemukan strategi belajar yang masuk akal,
+            membangun kebiasaan kecil, dan mengingat bahwa istirahat juga bagian dari proses.
+          </p>
+          <div class="about-tags">
+            <span class="tag tag-teal">Belajar Terarah</span>
+            <span class="tag tag-purple">Kebiasaan Kecil</span>
+            <span class="tag tag-green">Energi &amp; Mental</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5.3 Ruang untuk Bertumbuh -->
+    <section class="section grow-section" id="tumbuh">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">TIGA FONDASI</span>
+          <h2>Agar belajar tidak terasa semakin berat</h2>
+          <p>Kamu tidak perlu membenahi semuanya sekaligus. Mulai dari satu fondasi yang paling kamu butuhkan hari ini.</p>
+        </div>
+
+        <div class="grow-grid">
+          <article class="grow-card card-teal">
+            <div class="grow-art">
+              <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=560&q=80" alt="Buku catatan dan pena di meja, simbol mencatat ritme belajar" class="grow-photo" loading="lazy" decoding="async">
+              <span class="grow-number">01</span>
+            </div>
+            <div class="grow-body">
+              <h3>Kenali ritmemu</h3>
+              <p>Setiap orang punya jam fokus yang berbeda. Menemukan ritmemu lebih berguna daripada memaksakan jadwal orang lain.</p>
+              <ul>
+                <li>Catat tiga hari: kapan kamu paling mudah fokus</li>
+                <li>Pilih satu jam belajar yang realistis, bukan yang ideal</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="grow-card card-purple">
+            <div class="grow-art">
+              <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=560&q=80" alt="Catatan rencana harian di meja, simbol belajar dengan arah" class="grow-photo" loading="lazy" decoding="async">
+              <span class="grow-number">02</span>
+            </div>
+            <div class="grow-body">
+              <h3>Belajar dengan arah</h3>
+              <p>Tugas besar terasa menakutkan. Pecah menjadi bagian kecil supaya kamu tahu harus mulai dari mana.</p>
+              <ul>
+                <li>Tentukan satu hasil kecil untuk satu sesi belajar</li>
+                <li>Siapkan bahan dan tutup distraksi sebelum mulai</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="grow-card card-green">
+            <div class="grow-art">
+              <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=560&q=80" alt="Handuk dan bunga, simbol merawat energi diri" class="grow-photo" loading="lazy" decoding="async">
+              <span class="grow-number">03</span>
+            </div>
+            <div class="grow-body">
+              <h3>Jaga energimu</h3>
+              <p>Nilai penting, tetapi tubuh dan pikiranmu lebih penting. Belajar tanpa jeda justru membuat prosesnya lebih lambat.</p>
+              <ul>
+                <li>Tidur cukup dan beri jeda singkat setiap 25 menit</li>
+                <li>Minta bantuan saat bingung — itu bagian dari belajar</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5.4 Strategi Belajar & Ruang Fokus -->
+    <section class="section tips-section" id="strategi">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">STRATEGI BELAJAR</span>
+          <h2>Enam cara belajar yang bisa kamu coba minggu ini</h2>
+          <p>Pilih satu strategi, jalankan selama tiga hari, lalu nilai apakah cara itu membantumu. Tidak perlu mencoba semuanya sekaligus.</p>
+        </div>
+
+        <div class="filter-row" role="group" aria-label="Filter strategi belajar">
+          <button class="filter-button active" type="button" data-filter="semua" aria-pressed="true">Semua</button>
+          <button class="filter-button" type="button" data-filter="fokus" aria-pressed="false">Fokus</button>
+          <button class="filter-button" type="button" data-filter="ingatan" aria-pressed="false">Ingatan</button>
+          <button class="filter-button" type="button" data-filter="energi" aria-pressed="false">Energi</button>
+        </div>
+
+        <div class="tips-grid" id="tipsGrid">
+          <article class="tip-card" data-category="ingatan">
+            <div class="tip-top">
+              <span class="tip-icon" aria-hidden="true">🧠</span>
+              <span class="tag tag-teal">Ingatan</span>
+            </div>
+            <h3>Uji diri sebelum merasa paham</h3>
+            <p>Membaca ulang terasa nyaman, tetapi belum tentu membuatmu ingat. Setelah membaca, tutup buku dan tulis apa yang bisa kamu jelaskan.</p>
+            <p class="tip-try"><strong>Coba hari ini:</strong> setelah dua halaman, tulis tiga poin utama tanpa melihat catatan.</p>
+          </article>
+
+          <article class="tip-card" data-category="ingatan">
+            <div class="tip-top">
+              <span class="tip-icon" aria-hidden="true">🔁</span>
+              <span class="tag tag-teal">Ingatan</span>
+            </div>
+            <h3>Ulangi dengan jeda</h3>
+            <p>Otak lebih mudah mengingat informasi yang muncul kembali beberapa kali dalam jarak waktu, bukan dalam satu malam.</p>
+            <p class="tip-try"><strong>Coba hari ini:</strong> jadwalkan ulasan 10 menit besok pagi dan tiga hari lagi.</p>
+          </article>
+
+          <article class="tip-card" data-category="fokus">
+            <div class="tip-top">
+              <span class="tip-icon" aria-hidden="true">⏱️</span>
+              <span class="tag tag-purple">Fokus</span>
+            </div>
+            <h3>Fokus 25 menit, lalu jeda</h3>
+            <p>Satu timer dan satu tugas membuat otak tidak sibuk berpindah-pindah. Jeda singkat membantu menjaga konsentrasi.</p>
+            <p class="tip-try"><strong>Coba hari ini:</strong> gunakan timer di bawah dan kerjakan satu bagian kecil saja.</p>
+          </article>
+
+          <article class="tip-card" data-category="fokus">
+            <div class="tip-top">
+              <span class="tip-icon" aria-hidden="true">📵</span>
+              <span class="tag tag-purple">Fokus</span>
+            </div>
+            <h3>Satu tugas dalam satu waktu</h3>
+            <p>Notifikasi dan banyak tab membuat perhatian terpecah. Menyingkirkan distraksi lebih efektif daripada mengandalkan niat.</p>
+            <p class="tip-try"><strong>Coba hari ini:</strong> letakkan ponsel di luar jangkauan dan buka hanya tab yang dibutuhkan.</p>
+          </article>
+
+          <article class="tip-card" data-category="energi">
+            <div class="tip-top">
+              <span class="tip-icon" aria-hidden="true">🌙</span>
+              <span class="tag tag-green">Energi</span>
+            </div>
+            <h3>Tidur sebagai bagian dari belajar</h3>
+            <p>Tidur cukup membantu otak menyimpan dan menghubungkan apa yang sudah dipelajari. Begadang bisa mengurangi hasil belajarmu.</p>
+            <p class="tip-try"><strong>Coba hari ini:</strong> tetapkan jam tidur yang sama dan hindari layar 30 menit sebelumnya.</p>
+          </article>
+
+          <article class="tip-card" data-category="energi">
+            <div class="tip-top">
+              <span class="tip-icon" aria-hidden="true">🚶</span>
+              <span class="tag tag-green">Energi</span>
+            </div>
+            <h3>Gerak dan jeda sebentar</h3>
+            <p>Duduk terlalu lama membuat tubuh dan pikiran lelah. Jeda singkat untuk bergerak bisa membantu kamu kembali fokus.</p>
+            <p class="tip-try"><strong>Coba hari ini:</strong> setiap selesai satu sesi, berdiri dan berjalan lima menit.</p>
+          </article>
+        </div>
+
+        <p class="tips-note">
+          <strong>Ingat:</strong> strategi terbaik adalah yang bisa kamu ulangi, bukan yang paling rumit.
+        </p>
+
+        <div class="focus-panel" id="fokus">
+          <div class="focus-copy">
+            <span class="eyebrow eyebrow-light">RUANG FOKUS</span>
+            <h3>Coba satu sesi sekarang.</h3>
+            <p>
+              Pilih satu tugas kecil, nyalakan timer, dan biarkan 25 menit ini hanya untuk tugas itu.
+              Setelah selesai, istirahat lima menit sebelum melanjutkan.
+            </p>
+            <p class="focus-note">Timer berjalan di browser ini. Tidak ada data yang dikirim.</p>
+          </div>
+
+          <div class="focus-timer">
+            <div class="timer-modes" role="group" aria-label="Pilih mode timer">
+              <button class="timer-mode active" type="button" data-minutes="25" aria-pressed="true">Fokus 25</button>
+              <button class="timer-mode" type="button" data-minutes="5" aria-pressed="false">Istirahat 5</button>
+            </div>
+            <div class="timer-display" id="timerDisplay" role="timer">25:00</div>
+            <div class="timer-actions">
+              <button class="button button-light" id="timerToggle" type="button">Mulai</button>
+              <button class="button button-ghost" id="timerReset" type="button">Ulangi</button>
+            </div>
+            <p class="timer-status" id="timerStatus" aria-live="polite">Siap saat kamu siap.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5.5 Refleksi dan Kutipan Motivasi -->
+    <section class="section quote-section" id="refleksi">
+      <div class="container quote-panel">
+        <div class="quote-heading">
+          <span class="eyebrow eyebrow-light">REFLEKSI HARIAN</span>
+          <h2>Kalimat yang mungkin kamu butuhkan hari ini</h2>
+          <p>Tekan tombol di bawah untuk membaca pengingat lain.</p>
+        </div>
+
+        <figure class="quote-card">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <blockquote id="quoteText">Perbandingan paling sehat adalah dengan dirimu sendiri kemarin.</blockquote>
+          <figcaption id="quoteAuthor">— RuangTumbuh</figcaption>
+          <button class="button button-light" id="quoteButton" type="button">
+            Tampilkan Kutipan Lain <span aria-hidden="true">↻</span>
+          </button>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 5.6 Langkah Kecil Hari Ini -->
+    <section class="section step-section" id="langkah">
+      <div class="container step-grid">
+        <div class="step-intro">
+          <span class="eyebrow">LANGKAH KECIL HARI INI</span>
+          <h2>Satu target kecil, <span>satu langkah nyata.</span></h2>
+          <p>
+            Tuliskan satu hal kecil yang bisa kamu selesaikan hari ini. Tujuannya bukan
+            menyelesaikan semuanya, tetapi menjaga momentum agar kamu tetap bergerak.
+          </p>
+          <div class="step-examples">
+            <button class="chip" type="button" data-step="Membaca 5 halaman">Membaca 5 halaman</button>
+            <button class="chip" type="button" data-step="Mengulas 10 menit materi kemarin">Mengulas 10 menit materi kemarin</button>
+            <button class="chip" type="button" data-step="Mengerjakan 3 soal latihan">Mengerjakan 3 soal latihan</button>
+            <button class="chip" type="button" data-step="Merapikan catatan satu bab">Merapikan catatan satu bab</button>
+          </div>
+        </div>
+
+        <div class="step-form-card">
+          <form id="stepForm" novalidate>
+            <div class="field">
+              <label for="stepInput">Langkah kecil saya hari ini</label>
+              <input
+                type="text"
+                id="stepInput"
+                name="stepInput"
+                placeholder="Contoh: membaca 10 halaman buku"
+                maxlength="120"
+                autocomplete="off"
+                aria-describedby="stepHint"
+                required
+              >
+              <small id="stepHint">Maksimal 120 karakter. Tersimpan hanya di browser ini.</small>
+            </div>
+            <button class="button button-primary button-block" type="submit">
+              Simpan Langkah Kecil <span aria-hidden="true">→</span>
+            </button>
+            <p class="form-error" id="formError" role="alert" hidden>Tulis dulu langkah kecilmu sebelum menyimpan.</p>
+          </form>
+
+          <div class="step-confirmation" id="stepConfirmation" role="status" aria-live="polite" hidden>
+            <span class="confirm-icon" aria-hidden="true">✓</span>
+            <div>
+              <strong>Langkah kecilmu hari ini:</strong>
+              <p id="stepResult"></p>
+              <p class="step-done-note" id="stepDoneNote" hidden>Selesai! Beri dirimu apresiasi kecil.</p>
+              <div class="step-actions">
+                <button class="text-button" id="completeStep" type="button">Tandai selesai <span aria-hidden="true">✓</span></button>
+                <button class="text-button" id="resetStep" type="button">Tulis langkah lain <span aria-hidden="true">→</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 5.7 Pertanyaan yang sering muncul -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-heading faq-heading">
+          <span class="eyebrow">SEBELUM MULAI</span>
+          <h2>Pertanyaan yang sering muncul</h2>
+          <p>Kalau kamu masih ragu, mungkin jawabannya ada di sini.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Apakah RuangTumbuh menggantikan konselor atau psikolog?</summary>
+            <p>
+              Tidak. RuangTumbuh adalah ruang edukasi dan motivasi. Jika kamu merasa kewalahan
+              berkepanjangan, kehilangan minat, atau sulit menjalani kegiatan sehari-hari,
+              pertimbangkan untuk berbicara dengan konselor kampus atau tenaga profesional.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Aku sudah tertinggal banyak. Mulai dari mana?</summary>
+            <p>
+              Mulai dari satu tugas terkecil yang bisa selesai dalam 15–25 menit. Jangan menghitung
+              semua yang belum selesai; fokus pada satu langkah yang bisa kamu lakukan hari ini.
+              Setelah itu, baru susun langkah berikutnya.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Apakah harus mengikuti semua strategi di halaman ini?</summary>
+            <p>
+              Tidak. Pilih satu strategi yang paling masuk akal untukmu, coba selama tiga hari,
+              lalu evaluasi. Kalau tidak cocok, ganti — bukan berarti kamu gagal.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Berapa lama idealnya belajar setiap hari?</summary>
+            <p>
+              Tidak ada angka yang berlaku untuk semua orang. Sesi 25–50 menit dengan jeda biasanya
+              lebih mudah dipertahankan daripada belajar berjam-jam tanpa henti. Yang penting adalah
+              konsistensi dan kualitas fokus, bukan durasi semata.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Apakah langkah kecil yang saya tulis disimpan?</summary>
+            <p>
+              Ya, tetapi hanya di browser ini melalui penyimpanan lokal. Tidak ada data yang dikirim
+              ke server. Menghapus data browser akan menghapus catatan tersebut.
+            </p>
+          </details>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- 5.8 Footer -->
   <footer class="site-footer">
     <div class="container footer-content">
-      <a class="brand footer-brand" href="#home"><span class="brand-icon">E</span><span>Edu<span class="brand-accent">Space</span></span></a>
-      <p>Belajar hari ini, berkembang setiap hari.</p>
-      <span>© <span id="currentYear"></span> EduSpace</span>
+      <div class="footer-brand-block">
+        <a class="brand footer-brand" href="#home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21v-8"></path>
+              <path d="M12 13c0-3 2-5 5-5 0 3-2 5-5 5z"></path>
+              <path d="M12 13c0-3-2-5-5-5 0 3 2 5 5 5z"></path>
+            </svg>
+          </span>
+          <span>Ruang<span class="brand-accent">Tumbuh</span></span>
+        </a>
+        <p>Ruang edukasi dan motivasi untuk siswa &amp; mahasiswa.</p>
+      </div>
+      <nav class="footer-links" aria-label="Navigasi footer">
+        <a href="#tentang">Tentang</a>
+        <a href="#strategi">Strategi Belajar</a>
+        <a href="#fokus">Ruang Fokus</a>
+        <a href="#refleksi">Refleksi</a>
+        <a href="#langkah">Langkah Kecil</a>
+      </nav>
+      <span class="footer-copy">© <span id="currentYear"></span> RuangTumbuh</span>
     </div>
   </footer>
 
